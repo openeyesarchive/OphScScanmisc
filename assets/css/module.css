@@ -1,0 +1,7 @@
+div.scan-thumbnails { margin-bottom: 45px; }
+.scan-thumbnail { background-repeat: no-repeat; background-position: center; width: 150px; height: 150px; display: inline-block; border: 2px solid #ccc; margin-right: 8px; margin-left: 5px; }
+.scan-thumbnail .preview-thumbnail { margin-left: 30px; margin-top: 4px; }
+.scan-thumbnail a:hover { text-decoration: none; }
+.scan-thumbnail-preview-link { height: 38px; }
+.scan-thumbnail-select-target { height: 150px; }
+#Element_OphScScanmisc_Document_title { width: 29em; }
