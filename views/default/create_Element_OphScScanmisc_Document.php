@@ -16,7 +16,7 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html The GNU General Public License V3.0
  */
 
-$this->renderPartial('//elements/ElementScannedDocument/create',array(
+$this->renderPartial('//elements/ElementScannedDocument/form',array(
 	'form' => $form,
 	'element' => $element
 ));

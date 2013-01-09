@@ -1,6 +1,6 @@
 <?php
 
-class DefaultController extends BaseEventTypeController {
+class DefaultController extends ScannedDocumentController {
 	public function actionCreate() {
 		parent::actionCreate();
 	}
