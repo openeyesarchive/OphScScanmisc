@@ -15,8 +15,8 @@
 </table>
 
 <p>
-	<a href="<?php echo Yii::app()->createUrl('/'.$this->getModule()->name.'/default/downloadAsset/'.$element->asset_id)?>">Download <?php echo $element->asset->name?></a>
+	<a href="<?php echo Yii::app()->createUrl('/asset/download/'.$element->asset_id)?>">Download <?php echo $element->asset->name?></a>
 </p>
 
 <h4 class="elementTypeName">Preview</h4>
-<img src="<?php echo $element->asset->preview?>" />
+<img src="<?php echo Yii::app()->createUrl('/asset/preview/'.$element->asset_id)?>" />
