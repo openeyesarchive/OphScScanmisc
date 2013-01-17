@@ -104,5 +104,12 @@ class Element_OphScScanmisc_Document extends ElementScannedDocument
 			'criteria' => $criteria,
 		));
 	}
+
+	public function wrap($params=array()) {
+		$data = parent::wrap();
+		$asset = Asset::model()->findByPk($this->asset_id);
+		$data['asset_id'] = '{asset:'.$asset->hash.'}';
+		return $data;
+	}
 }
 ?>
