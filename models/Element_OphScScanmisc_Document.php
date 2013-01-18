@@ -108,7 +108,7 @@ class Element_OphScScanmisc_Document extends ElementScannedDocument
 	public function wrap($params=array()) {
 		$data = parent::wrap();
 		$asset = Asset::model()->findByPk($this->asset_id);
-		$data['asset_id'] = '{asset:'.$asset->hash.'}';
+		$data['asset_id'] = '{Asset:'.$asset->hash.'}';
 		return $data;
 	}
 }
