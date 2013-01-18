@@ -73,12 +73,6 @@ class Element_OphScScanmisc_Document extends ElementScannedDocument
 		);
 	}
 
-	public function relations() {
-		return array(
-			'event' => array(self::BELONGS_TO, 'Event', 'event_id'),
-		);
-	}
-
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
