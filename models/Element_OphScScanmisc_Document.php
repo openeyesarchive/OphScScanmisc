@@ -72,7 +72,13 @@ class Element_OphScScanmisc_Document extends ElementScannedDocument
 			array('id, event_id, asset_id, title, description', 'safe', 'on' => 'search'),
 		);
 	}
-	
+
+	public function relations() {
+		return array(
+			'event' => array(self::BELONGS_TO, 'Event', 'event_id'),
+		);
+	}
+
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
